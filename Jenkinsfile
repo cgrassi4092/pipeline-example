@@ -34,6 +34,11 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+        stage('Smoke') {
+            steps {
+                echo 'Smoke....'
+            }
+        }
     }
     post {
             always {
